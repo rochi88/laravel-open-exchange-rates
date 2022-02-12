@@ -5,14 +5,14 @@ This package provides a simple and convenient interface for working with the Ope
 
 Add this to your `composer.json` file, in the require object:
 ```sh
-"equentor/laravel-open-exchange-rates": "dev-master"
+"rochi88/laravel-open-exchange-rates": "dev-master"
 ```
 After that, run `composer install` to install the package.
 Add the service provider to `app/config/app.php`, within the providers array:
 ```php
 'providers' => [
     // ...
-    Equentor\LaravelOpenExchangeRates\LOERServiceProvider::class,
+    Rochi88\LaravelOpenExchangeRates\LOERServiceProvider::class,
 ]
 ```
 Lastly, publish the config file.
@@ -30,7 +30,7 @@ return [
 ```
 In controller (or service) method:
 ```php
-use Equentor\LaravelOpenExchangeRates\Client;
+use Rochi88\LaravelOpenExchangeRates\Client;
 
 class SomeController extends Controller
 {

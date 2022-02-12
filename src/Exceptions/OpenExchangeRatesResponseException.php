@@ -1,6 +1,6 @@
 <?php
 
-namespace Equentor\LaravelOpenExchangeRates\Exceptions;
+namespace Rochi88\LaravelOpenExchangeRates\Exceptions;
 
 class OpenExchangeRatesResponseException extends \Exception
 {
