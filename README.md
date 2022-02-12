@@ -5,20 +5,14 @@ This package provides a simple and convenient interface for working with the Ope
 
 Add this to your `composer.json` file, in the require object:
 ```sh
-"rochi88/laravel-open-exchange-rates": "dev-master"
+"rochi88/laravel-open-exchange-rates": "dev-main"
 ```
 After that, run `composer install` to install the package.
-Add the service provider to `app/config/app.php`, within the providers array:
-```php
-'providers' => [
-    // ...
-    Rochi88\LaravelOpenExchangeRates\LOERServiceProvider::class,
-]
-```
+
 Lastly, publish the config file.
 
 ```sh
-php artisan vendor:publish
+php artisan vendor:publish --provider="Rochi88\LaravelOpenExchangeRates\LOERServiceProvider"
 ```
 ### Usage example
 In `config/loer.php`
