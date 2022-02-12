@@ -5,7 +5,15 @@ This package provides a simple and convenient interface for working with the Ope
 
 Add this to your `composer.json` file, in the require object:
 ```sh
-"rochi88/laravel-open-exchange-rates": "dev-main"
+  "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/rochi88/laravel-open-exchange-rates"
+        }
+    ],
+    "require": {
+        "rochi88/laravel-open-exchange-rates": "dev-main",
+    },
 ```
 After that, run `composer install` to install the package.
 
